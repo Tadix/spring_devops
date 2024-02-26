@@ -1,0 +1,12 @@
+version: '3'
+services:
+  pro-epargne-api:
+    image: tadix07/tadix-private-image:latest
+    container_name: spring-simple
+    ports:
+      - "8080:8080"
+
+networks:
+  default:
+    external:
+      name: spring-simple
